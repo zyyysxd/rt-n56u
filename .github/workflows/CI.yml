@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
-    name: build
+    name: RM2100
     runs-on: ubuntu-20.04
     if: ${{ !(github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')) }}
     env:
